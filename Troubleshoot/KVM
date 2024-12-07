@@ -7,6 +7,8 @@ Check if Virtualization is enabled
 ---------------
 egrep -c '(vmx|svm)' /proc/cpuinfo
 
+if output shows 8 it's ok, if 0 , then follow the next steps.
+
 verify if KVM virtualization is enabled
 ------------
 kvm-ok
